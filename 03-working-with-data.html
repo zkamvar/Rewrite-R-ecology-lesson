@@ -263,7 +263,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with data</h1>
-        <p> Last updated on 2022-09-13 | <a href="https://github.com/MCMaurer/Rewrite-R-ecology-lesson/edit/main/episodes/03-working-with-data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-09-20 | <a href="https://github.com/MCMaurer/Rewrite-R-ecology-lesson/edit/main/episodes/03-working-with-data.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -337,7 +337,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
 <p>Typing out paths can be error prone, so we can utilize a keyboard shortcut. Inside the parentheses of <code>read_csv()</code>, type out a pair of quotes and put your cursor between them. Then hit <kbd>Tab</kbd>. A small menu showing your folders and files should show up. You can use the <kbd>↑</kbd> and <kbd>↓</kbd> keys to move through the options, or start typing to narrow them down. You can hit <kbd>Enter</kbd> to select a file or folder, and hit <kbd>Tab</kbd> again to continue building the file path. This might take a bit of getting used to, but once you get the hang of it, it will speed up writing file paths and reduce the number of mistakes you make.</p>
@@ -370,7 +370,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
 <p><strong><code>tidyverse</code> vs. base R</strong></p>
@@ -390,7 +390,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
 <p>Between <code>select()</code> and <code>filter()</code>, it can be hard to remember which operates on columns and which operates on rows. <code>sele</code><strong><code>c</code></strong><code>t()</code> has a <strong>c</strong> for <strong>c</strong>olumns and <code>filte</code><strong><code>r</code></strong><code>()</code> has an <strong>r</strong> for <strong>r</strong>ows.</p>
@@ -613,7 +613,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-filtering-and-selecting" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Filtering and selecting<a class="anchor" aria-label="anchor" href="#challenge-1-filtering-and-selecting"></a>
+<h3 class="callout-title">Challenge 1: Filtering and selecting<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Use the surveys data to make a data.frame that has only data with years from 1980 to 1985.</li>
@@ -627,7 +627,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -644,7 +644,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-filtering-and-selecting" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Filtering and selecting<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-1-filtering-and-selecting"></a>
+<h3 class="callout-title">Challenge 1: Filtering and selecting<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
 <ol start="2" style="list-style-type: decimal"><li>Use the surveys data to make a data.frame that has only the following columns, in order: <code>year</code>, <code>month</code>, <code>species_id</code>, <code>plot_id</code>.</li>
@@ -658,7 +658,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -773,7 +773,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-using-pipes" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Using pipes<a class="anchor" aria-label="anchor" href="#challenge-2-using-pipes"></a>
+<h3 class="callout-title">Challenge 2: Using pipes<a class="anchor" aria-label="anchor" href="#challenge3"></a>
 </h3>
 <div class="callout-content">
 <p>Use the surveys data to make a data.frame that has the columns <code>record_id</code>, <code>month</code>, and <code>species_id</code>, with data from the year 1988. Use a pipe between the function calls.</p>
@@ -787,7 +787,7 @@ dbl (7): record_id, month, day, year, plot_id, hindfoot_length, weight
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1028,7 +1028,7 @@ Attaching package: 'lubridate'</code></pre>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3-plotting-date" class="callout-inner">
-<h3 class="callout-title">Challenge 3: Plotting date<a class="anchor" aria-label="anchor" href="#challenge-3-plotting-date"></a>
+<h3 class="callout-title">Challenge 3: Plotting date<a class="anchor" aria-label="anchor" href="#challenge4"></a>
 </h3>
 <div class="callout-content">
 <p>Because the <code>ggplot()</code> function takes the data as its first argument, you can actually pipe data straight into <code>ggplot()</code>. Try building a pipeline that creates the date column and plots weight across date.</p>
@@ -1042,7 +1042,7 @@ Attaching package: 'lubridate'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb49">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1387,7 +1387,7 @@ Attaching package: 'lubridate'</code></pre>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-4-making-a-time-series" class="callout-inner">
-<h3 class="callout-title">Challenge 4: Making a time series<a class="anchor" aria-label="anchor" href="#challenge-4-making-a-time-series"></a>
+<h3 class="callout-title">Challenge 4: Making a time series<a class="anchor" aria-label="anchor" href="#challenge5"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Use the split-apply-combine approach to make a <code>data.frame</code> that counts the total number of animals of each sex caught on each day in the <code>surveys</code> data.</li>
@@ -1401,7 +1401,7 @@ Attaching package: 'lubridate'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb77">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1436,7 +1436,7 @@ Attaching package: 'lubridate'</code></pre>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-4-making-a-time-series" class="callout-inner">
-<h3 class="callout-title">Challenge 4: Making a time series<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-4-making-a-time-series"></a>
+<h3 class="callout-title">Challenge 4: Making a time series<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge6"></a>
 </h3>
 <div class="callout-content">
 <ol start="2" style="list-style-type: decimal"><li>Now use the data.frame you just made to plot the daily number of animals of each sex caught over time. It’s up to you what <code>geom</code> to use, but a <code>line</code> plot might be a good choice. You should also think about how to differentiate which data corresponds to which sex.</li>
@@ -1450,7 +1450,7 @@ Attaching package: 'lubridate'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb80">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1732,7 +1732,7 @@ Attaching package: 'lubridate'</code></pre>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>use <code>filter()</code> to subset rows and <code>select()</code> to subset columns</li>
@@ -1769,8 +1769,8 @@ Attaching package: 'lubridate'</code></pre>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.5" class="external-link">sandpaper (0.9.5)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.3.1" class="external-link">pegboard (0.3.1)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.10.0" class="external-link">sandpaper (0.10.0)</a>,
+        <a href="https://github.com/carpentries/pegboard/tree/0.3.2" class="external-link">pegboard (0.3.2)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
@@ -1792,8 +1792,8 @@ Attaching package: 'lubridate'</code></pre>
   "url": "https://MCMaurer.github.io/Rewrite-R-ecology-lesson/03-working-with-data.html",
   "identifier": "https://MCMaurer.github.io/Rewrite-R-ecology-lesson/03-working-with-data.html",
   "dateCreated": "2022-04-29",
-  "dateModified": "2022-09-13",
-  "datePublished": "2022-09-13"
+  "dateModified": "2022-09-20",
+  "datePublished": "2022-09-20"
 }
 
   </script><script>
